@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "x_name": "Beautiful Villa Test",
+    "x_studio_sale_price": 32012551,
+    "x_studio_many2one_field_YbLip": [
+      1,
+      "Dabouq"
+    ],
+    "x_studio_featured_url": "https://qoshan.odoo.com/web/content/36/e0c6825c-testimonial-image.webp",
+    "x_studio_property_id": "2315614562",
+    "x_studio_property_area": 200,
+    "x_studio_land_area": 300,
+    "x_studio_bedrooms": 3,
+    "x_studio_bathrooms_1": 4,
+    "x_studio_garages": 5,
+    "x_studio_status": "Published",
+    "x_studio_type": "Apartment",
+    "x_studio_price_prefix": "Starting",
+    "x_studio_property_information": "<h1>Amazing Property</h1><p>Cool Property<span class=\"oe-tabs\" style=\"width: 36.4531px;\">\t</span>​<span class=\"oe-tabs\" style=\"width: 40px;\">\t</span>​</p>",
+    "x_studio_featured_property": false,
+    "x_studio_view_on_slider": false,
+    "x_studio_many2many_field_k2sqN": [
+      1,
+      2
+    ],
+    "x_features": {}
+  },
+  {
+    "id": 2,
+    "x_name": "Beautiful Villa Test 1",
+    "x_studio_sale_price": 32012551,
+    "x_studio_many2one_field_YbLip": [
+      1,
+      "Dabouq"
+    ],
+    "x_studio_featured_url": "https://qoshan.odoo.com/36/e0c6825c-testimonial-image.webp",
+    "x_studio_property_id": "2315614562",
+    "x_studio_property_area": 200,
+    "x_studio_land_area": 300,
+    "x_studio_bedrooms": 3,
+    "x_studio_bathrooms_1": 4,
+    "x_studio_garages": 5,
+    "x_studio_status": "Published",
+    "x_studio_type": "Apartment",
+    "x_studio_price_prefix": "Starting",
+    "x_studio_property_information": "<h1>Amazing Property</h1><p>Cool Property<span class=\"oe-tabs\" style=\"width: 36.4531px;\">\t</span>​<span class=\"oe-tabs\" style=\"width: 40px;\">\t</span>​</p>",
+    "x_studio_featured_property": "Yes",
+    "x_studio_view_on_slider": "View on Slider",
+    "x_studio_many2many_field_k2sqN": [
+      1
+    ],
+    "x_features": {}
+  }
+]
