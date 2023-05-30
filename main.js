@@ -18,7 +18,7 @@ client.methodCall('authenticate', [db, username, password, {}], (error, uid) => 
 
   const model = 'x_crm';  
 
-  const fields = ['x_name', 'x_studio_sale_price', 'x_studio_many2one_field_YbLip', 'x_studio_featured_url', 'x_studio_property_id', 'x_studio_property_area', 'x_studio_land_area', 'x_studio_bedrooms', 'x_studio_bathrooms_1', 'x_studio_garages', 'x_studio_status', 'x_studio_type', 'x_studio_price_prefix', 'x_studio_property_information', 'x_studio_featured_property', 'x_studio_view_on_slider', 'x_studio_many2many_field_k2sqN', 'x_studio_property_images'];  
+  const fields = ['x_name', 'x_studio_sale_price', 'x_studio_many2one_field_YbLip', 'x_studio_featured_url', 'x_studio_property_id', 'x_studio_property_area', 'x_studio_land_area', 'x_studio_bedrooms', 'x_studio_bathrooms_1', 'x_studio_garages', 'x_studio_status', 'x_studio_type', 'x_studio_price_prefix', 'x_studio_property_information', 'x_studio_featured_property', 'x_studio_view_on_slider', 'x_studio_many2many_field_k2sqN', 'x_studio_property_images', 'x_studio_url'];  
 
   models.methodCall('execute_kw', [db, uid, password, model, 'search_read', [[]], { fields: fields }], (error, entries) => {
     if (error) {
