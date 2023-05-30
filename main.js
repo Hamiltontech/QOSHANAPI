@@ -36,31 +36,28 @@ client.methodCall('authenticate', [db, username, password, {}], (error, uid) => 
       return '';
     };
 
-const fetchMany2ManyNames = (entry, fieldName) => {
-    const relatedRecords = entry[fieldName];
-    if (relatedRecords && relatedRecords.length > 0) {
-      const relatedRecordNames = relatedRecords.map(record => record[1].x_name || 'Unknown');
-      return relatedRecordNames;
-    }
-    return [];
-  };
-  
-  
-  
-  
+    const fetchMany2ManyNames = (entry, fieldName) => {
+      const relatedRecords = entry[fieldName];
+      if (relatedRecords && relatedRecords.length > 0) {
+        const relatedRecordNames = relatedRecords.map(record => record[1].x_name || 'Unknown');
+        return relatedRecordNames;
+      }
+      return [];
+    };
+
     const modifiedEntries = entries.map(entry => ({
       ...entry,
       x_cities: fetchMany2OneName(entry, 'x_studio_many2one_field_YbLip'), 
       x_features: fetchMany2ManyNames(entry, 'x_studio_many2many_field_k2sqN'),  
     }));
 
-    const jsonData = JSON.stringify(modifiedEntries, null, 2);
+    const jsData = `module.exports = ${JSON.stringify(modifiedEntries, null, 2)};`;
 
-    fs.writeFile('data.json', jsonData, 'utf8', (error) => {
+    fs.writeFile('data.js', jsData, 'utf8', (error) => {
       if (error) {
         console.error('Write File Error:', error);
       } else {
-        console.log('Data has been saved to data.json');
+        console.log('Data has been saved to data.js');
       }
 
       client.methodCall('logout', [db, uid, password], (error) => {
